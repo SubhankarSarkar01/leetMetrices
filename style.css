@@ -65,6 +65,7 @@ h1{
     color: white;
     font-weight: 700;
     background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+    flex-direction: column;
 }
 .circle span{
     position: relative;
@@ -74,8 +75,32 @@ h1{
 .progress{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 20px;
 }
 
+
+.stats-card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.card{
+    background-color: rgb(230, 146, 44);
+    width: 40%;
+    max-width: 290px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 4rem;
+}
